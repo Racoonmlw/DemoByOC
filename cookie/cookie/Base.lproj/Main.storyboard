@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="中国" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZQ-IA-h1p">
+                                <rect key="frame" x="30" y="104" width="540" height="34"/>
+                                <color key="backgroundColor" red="0.055840308550000002" green="1" blue="0.83546632539999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gk6-uw-Bgj"/>
+                                </constraints>
+                                <state key="normal" title="清除储存的ccookie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1K-tA-zB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNQ-KZ-usl">
+                                <rect key="frame" x="30" y="168" width="540" height="34"/>
+                                <color key="backgroundColor" red="0.055840308550000002" green="1" blue="0.83546632539999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="w26-AF-Fsc"/>
+                                </constraints>
+                                <state key="normal" title="手动添加cookie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hf7-qf-eji"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRr-ko-BCk">
+                                <rect key="frame" x="30" y="40" width="540" height="34"/>
+                                <color key="backgroundColor" red="0.055840308550000002" green="1" blue="0.83546632539999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="fwR-HN-XOm"/>
+                                </constraints>
+                                <state key="normal" title="显示储存的cookie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtW-Vb-GmH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRr-ko-BCk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="4bz-Qf-50n"/>
+                            <constraint firstItem="LNQ-KZ-usl" firstAttribute="top" secondItem="DZQ-IA-h1p" secondAttribute="bottom" constant="30" id="A5j-Hq-Afy"/>
+                            <constraint firstItem="DZQ-IA-h1p" firstAttribute="top" secondItem="IRr-ko-BCk" secondAttribute="bottom" constant="30" id="HXS-GS-upE"/>
+                            <constraint firstAttribute="trailing" secondItem="DZQ-IA-h1p" secondAttribute="trailing" constant="30" id="InI-tE-RqY"/>
+                            <constraint firstItem="IRr-ko-BCk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="MKj-0c-gmH"/>
+                            <constraint firstAttribute="trailing" secondItem="IRr-ko-BCk" secondAttribute="trailing" constant="30" id="OB3-WG-KJ1"/>
+                            <constraint firstAttribute="trailing" secondItem="LNQ-KZ-usl" secondAttribute="trailing" constant="30" id="ObL-M5-BR9"/>
+                            <constraint firstItem="DZQ-IA-h1p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="wkU-EA-W4R"/>
+                            <constraint firstItem="LNQ-KZ-usl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="zWd-Ay-GJE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
